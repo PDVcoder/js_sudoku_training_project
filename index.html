@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS lab 1</title>
+    <script src="Sudoku.js"></script>
+
+    <script src="Schedule.js"></script>
+    <script src="Tovar.js"></script>
+    <script src="script.js" async></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body1">
+
+    <header>
+        <h3>Підключення скрипта</h3>
+    </header>
+    <div class="labs">
+
+
+        <h3>Числа Фібоначі</h3>
+        <input class="inputlabs" id="textFi" title="Введіть n" min="0" type="number"></input>
+        <button onclick="fibonaci()">Фібоначі</button>
+        <p id="numfi">n чисел Фібоначі: </p>
+    </div>
+
+    <hr>
+
+    <div class="labs">
+        <h3>Ліфт в будинку</h3>
+
+        <p id="floors1">Кількість поверхів: </p>
+        <input class="inputlabs" id="textFn" type="number" min="0" title="Введіть кількість поверхів"></input>
+        <!--<p id="floors1_1">Кількість поверхів: </p>-->
+        <p id="floors2">Обрана квартира: </p>
+        <input class="inputlabs" id="textFf" type="number" min="0" title="Введіть введіть номер квартири"></input>
+        <br>
+        <button onclick="floor_s()">Ліфт та номер квартира</button>
+        <p id="floors3">Результат: </p>
+    </div>
+
+    <hr>
+
+    <div class="labs">
+        <h3>Матриця випадкових чисел</h3>
+        <p id="m1">Кількість рядків(m): </p>
+        <input class="inputlabs" id="textMm" type="number" min="0" title="Введіть кількість поверхів"></input>
+        <p id="m2">Кількість ствобців(n): </p>
+        <input class="inputlabs" id="textMn" type="number" min="0" title="Введіть кількість поверхів"></input>
+        <br>
+        <button onclick="matrix()">Матриця</button>
+        <p id="m3">Матриця[m*n]: </p>
+        <div id="matrixdiv"></div>
+        <p id="m4"></p>
+        <p id="m5"></p>
+    </div>
+
+    <hr>
+
+    <div class="labs">
+        <h3>Розклад</h3>
+        <p>
+            <label for="firstname">Група: </label>
+            <select size="1" id="group">
+                <option value="A">IK-91</option>
+                <option value="B">IK-92</option>
+                <option value="C">IK-93</option>
+            </select>
+        </p>
+        <p>
+            <label for="date">Дата: </label>
+            <input class="inputlabs" type="date" id="date" name="date" />
+        </p>
+        <p>
+            <button onclick="schedule()">Запит</button>
+        </p>
+        <p id="schedRes"></p>
+    </div>
+
+    <hr>
+
+    <div class="labs">
+        <h3>Калькулятор</h3>
+
+        <p>
+            <label>Перший операнд: </label>
+            <input class="inputlabs" id="op1" type="number" />
+        </p>
+        <p>
+            <label>Другий операнд: </label>
+            <input class="inputlabs" id="op2" type="number" />
+        </p>
+        <p>
+            <label>Результат: </label>
+            <input class="inputlabs" id="resultCalc" />
+        </p>
+        <p>
+            <label>Операції: </label>
+            <button id="plus" onclick="plusOp()">+</button>
+            <button id="minus" onclick="minusOp()">-</button>
+            <button id="mult" onclick="multOp()">*</button>
+            <button id="devide" onclick="devOp()">/</button>
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="labs">
+        <h3>Товари</h3>
+        <p>
+            <label>Назва товару: </label>
+            <input class="inputlabs" type="text" id="nameTov">
+        </p>
+        <p>
+            <label>Ціна: </label>
+            <input class="inputlabs" type="number" id="priceTov">
+        </p>
+        <p>
+            <label>Кількість: </label>
+            <input class="inputlabs" type="number" id="numTov">
+        </p>
+        <p>
+            <button onclick="addTovar()">Додати товар</button>
+        </p>
+        <p>
+            <button onclick="writeTov()">Показати товари</button>
+        </p>
+
+        <div id="tovdiv">
+        </div>
+        <p id="allSuma"></p>
+
+    </div>
+
+    <hr>
+
+    <div class="labs">
+
+        <h3>Судоку</h3>
+
+        <p>
+            <button onclick="generateSudocu()">Згенерувати</button>
+        </p>
+        <p>
+            <button onclick="getResult()">Перевірити</button>
+            <p id="sudResult"></p>
+        </p>
+
+        <div id="app"></div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

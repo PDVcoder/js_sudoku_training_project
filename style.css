@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+}
+
+.labs {
+    background-color: palegoldenrod;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-self: center;
+    transition-duration: 250ms;
+    padding-bottom: 10px;
+}
+
+.labs:hover {
+    background-color: rgb(240, 233, 157);
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightslategray;
+    font-size: 40px;
+    transition-duration: 250ms;
+}
+
+h3:hover {
+    background-color: rgb(96, 117, 138);
+}
+
+header {
+    height: 10%;
+    background-color: lightslategray;
+    padding: 50px;
+    margin: 0px;
+}
+
+button {
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    margin-right: 1000px;
+}
+
+.inputlabs {
+    width: 29%;
+    height: 44px;
+    font-size: 30px;
+    align-items: center;
+    margin-right: 1000px;
+    transition-duration: 500ms;
+}
+
+.inputlabs:hover {
+    width: 30%;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+select {
+    width: 29%;
+    height: 44px;
+    font-size: 20px;
+    align-items: center;
+    margin-right: 1000px;
+}
+
+.tabsu {
+    border-style: solid;
+    border-width: 5px;
+}
+
+.sudoku-game {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    border: 6px solid rgb(22, 22, 22);
+}
+
+.sudoku-segment {
+    border: 3px solid rgb(31, 31, 30);
+    margin: 1px;
+    padding: 1px;
+    width: calc(100%/3 - 10px);
+    height: calc(100%/3 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sudoku-cell {
+    text-align: center;
+    font-size: 100%;
+    width: calc(100%/3 - 2px);
+    height: calc(100%/3 - 2px);
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 1px;
+    background: #ffffff;
+}
+
+.sudoku-cell.start-cell {
+    color: gray;
+}
+
+.sudoku-cell.supported-cell {
+    background: #cccccc;
+}
+
+.sudoku-cell.selected-cell {
+    background: #f1efef;
+    font-size: 35px;
+}
+
+.sudoku-cell.important-cell {
+    color: blue;
+}
+
+.sudoku-cell.start-cell.error {
+    color: #ed0a0a;
+}
+
+.sudoku-cell.error {
+    color: red;
+}
