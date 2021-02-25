@@ -249,7 +249,7 @@ class Sudoku {
             this.swapRow();
         }
 
-        let x = this.gn(0, 80, 1);
+        let x = this.gn(0, 80, 30);
         console.log(x());
         return x();
 
